@@ -15,7 +15,7 @@
   --border-header: #ececec;
   --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  --border-exemple: #eeeeee;
+  --border-example: #eeeeee;
 }
 
 html {
@@ -63,7 +63,7 @@ p {
   margin-top: 0;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -260,6 +260,9 @@ l .filter-button {
   font-size: 14px;
   line-height: 1.7;
 }
+.section advantage {
+  padding-bottom: 94px;
+}
 .feature .item:nth-child(n) {
   margin-right: 0;
 }
@@ -269,7 +272,10 @@ l .filter-button {
   flex-basis: calc((100%-90px) / 3);
 }
 /* filter */
-
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .filter-button {
   display: flex;
   justify-content: center;
@@ -281,26 +287,21 @@ l .filter-button {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-top: 34px;
   color: var(--list-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
 .grid .item {
-  width: calc((100% - 2 * 30px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.item:nth-child(3n) {
-  margin-right: 0;
-}
-.grid.item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+  flex-basis: calc((100% - 30px) / 3);
+  margin: 0 10px 30px 0;
 }
 
 .card-text {
+  margin-right: 17px;
   padding: 20px 24px;
   border-right: 1px solid var(--border-example);
   border-bottom: 1px solid var(--border-example);
@@ -321,6 +322,9 @@ l .filter-button {
 } /* soft */
 
 .section-caption {
+  margin-bottom: 50px;
+}
+.section-caption {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -330,6 +334,7 @@ l .filter-button {
 .soft {
   display: flex;
   margin-left: -30px;
+  padding-bottom: 94px;
 }
 .item-soft {
   margin-left: 30px;
@@ -338,10 +343,11 @@ l .filter-button {
 .work {
   padding-top: 0;
 }
+/* team */
+
 .team .section-caption {
   margin-bottom: 50px;
 }
-/* team */
 
 .team {
   background: var(--premiry-bg-color);
@@ -351,15 +357,15 @@ l .filter-button {
 
 .team li {
   margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
 }
 
-.list {
+.team .list {
   display: flex;
-  margin-left: -30px;
   text-align: center;
+  margin-left: -30px;
 
   background: var(--white-color);
   font-weight: 400;
@@ -373,7 +379,17 @@ l .filter-button {
   font-size: 16px;
   line-height: 1.18;
 }
-
+.section-team {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.profi {
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 1, 18;
+  letter-spacing: 0.03em;
+  color: var(--list-text-color);
+}
 .team .section-caption {
   margin-bottom: 50;
 }
@@ -412,4 +428,16 @@ l .filter-button {
 }
 .address-item .link {
   color: var(--white-color);
+}
+
+footer .list {
+  text-align: left;
+  margin-left: 0;
+}
+
+footer .logo {
+  margin-bottom: 20px;
+}
+.connektion {
+  font-style: normal;
 }
