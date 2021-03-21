@@ -1,111 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!--шапка-->
-    <header>
+    <header class="header">
+      <div class="container">
         <nav>
-            <a class="logo" href="/index.html">
-                Web<span class="accent">Studio</span>
-            </a>
-
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="link">Студия</a></li>
-                <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
-            </ul>
+          <a class="logo" href="/index.html">
+            Web<span class="accent">Studio</span>
+          </a>
+          <ul class="site-nav list">
+            <li class="item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
         </nav>
-        <ul class="auth-nav list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        <ul class="contacts list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
+      </div>
     </header>
     <main>
-        <!-- уникальный контент страницы-->
-        <section class="section-advantages">
-            <ul>
-                <li><button type="button" class="button link primary secandary">Все</button></li>
-                <li><button type="button" class="button link">Веб-сайты</button></li>
-                <li><button type="button" class="button link">Приложения</button></li>
-                <li><button type="button" class="button link">Дизайн</button></li>
-                <li><button type="button" class="button link">Маркетинг</button> </li>
-            </ul>
-            <!--особенности-->
+      <!-- уникальный контент страницы-->
+      <section class="portfolio">
+        <div class="container">
+          <ul class="filter-button">
+            <li class="link">
+              <button type="button" class="filter-button link primary">
+                Все
+              </button>
+            </li>
+            <li class="link">
+              <button type="button" class="filter-button link secandary">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="link">
+              <button type="button" class="filter-button link secandary">
+                Приложения
+              </button>
+            </li>
+            <li class="link">
+              <button type="button" class="filter-button link secandary">
+                Дизайн
+              </button>
+            </li>
+            <li class="link">
+              <button type="button" class="filter-button link secandary">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <!--особенности-->
 
-            <ul class="section-filter">
-                <li><img src="./imagest/page2/img8.jpg" alt="Технокряк" width="370">
-                    <h2 class="filter">Технокряк</h2>
-                    <p>Веб-сайт</p>
-                </li>
-                <li><img src="./imagest/page2/img9.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                    <h2 class="filter">Постер New Orlean vs Golden Star</h2>
-                    <p>Дизайн</p>
-                </li>
-                <li><img src="./imagest/page2/img10.jpg" alt="Ресторан Seafood" width="370">
-                    <h2 class="filter">Ресторан Seafood</h2>
-                    <p>Приложение</p>
-                </li>
-                <li><img src="./imagest/page2/img11.jpg" alt="Проект Prime" width="370">
-                    <h2 class="filter">Проект Prime</h2>
-                    <p>Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./imagest/page2/img12.jpg" alt="Проект Boxes" width="370">
-                    <h2 class="filter">Проект Boxes</h2>
-                    <p>Приложение</p>
-                </li>
-                <li>
-                    <img src="./imagest/page2/img13.jpg" alt="Inspiration has no Borders" width="370">
-                    <h2 class="filter">Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./imagest/page2/img14.jpg" alt="Издание Limited Edition" width="370">
-                    <h2 class="filter">Издание Limited Edition</h2>
-                    <p>Дизайн</p>
-                </li>
-                <li>
-                    <img src="./imagest/page2/img15.jpg" alt="Проект LAB" width="370">
-                    <h2 class=" filter">Проект LAB</h2>
-                    <p>Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./imagest/page2/img16.jpg" alt="Growing Business" width="370">
-                    <h2 class="filter">Growing Business</h2>
-                    <p>Приложение</p>
-                </li>
+          <div class="container">
+            <ul class="grid">
+              <li class="item">
+                <img
+                  src="./imagest/page2/img8.jpg"
+                  alt="Технокряк"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Технокряк</h2>
+                  <p class="grid-text">"Веб-сайт</p>
+                </div>
+              </li>
+              <li class="item">
+                <img
+                  src="./imagest/page2/img9.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="grid-text">Дизайн</p>
+                </div>
+              </li>
+              <li class="item">
+                <img
+                  src="./imagest/page2/img10.jpg"
+                  alt="Ресторан Seafood"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Ресторан Seafood</h2>
+                  <p class="grid-text">Приложение</p>
+                </div>
+              </li>
+              <li class="item">
+                <img
+                  src="./imagest/page2/img11.jpg"
+                  alt="Проект Prime"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Проект Prime</h2>
+                  <p class="grid-text">Маркетинг</p>
+                </div>
+              </li>
+              <li class="item">
+                <img
+                  src="./imagest/page2/img12.jpg"
+                  alt="Проект Boxes"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Проект Boxes</h2>
+                  <p class="grid-text">Приложение</p>
+                </div>
+              </li>
+              <li class="item">
+                <img
+                  src="./imagest/page2/img13.jpg"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Inspiration has no Borders</h2>
+                  <p class="grid-text">Веб-сайт</p>
+                </div>
+              </li>
+              <li class="item">
+                <img
+                  src="./imagest/page2/img14.jpg"
+                  alt="Издание Limited Edition"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Издание Limited Edition</h2>
+                  <p class="grid-text">Дизайн</p>
+                </div>
+              </li>
+              <li class="item">
+                <img
+                  src="./imagest/page2/img15.jpg"
+                  alt="Проект LAB"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Проект LAB</h2>
+                  <p class="grid-text">Маркетинг</p>
+                </div>
+              </li>
+              <li class="item">
+                <img
+                  src="./imagest/page2/img16.jpg"
+                  alt="Growing Business"
+                  width="370"
+                />
+                <div class="card-text">
+                  <h2 class="grid-title">Growing Business</h2>
+                  <p class="grid-text">Приложение</p>
+                </div>
+              </li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- подвал страницы-->
-    <footer class="">
-        <div class="dark-bg">
-            <a class="logo" href="/index.html">
-                Web<span class="accent-logo">Studio</span>
-            </a>
-            <address>
-                <ul class="address-nav list">
-                    <li class="address-item"> <a href="" class="link">г. Киев, пр-т Леси Украинки, 26</a> </li>
-                    <li> <a href="mailto:info@example.com" class="link">info@example.com</a> </li>
-                    <li> <a href="tel:+380991111111" class="link">+38 099 111 11 11</a> </li>
-                </ul>
-            </address>
-        </div>
+    <footer class="dark-bg">
+      <div class="container">
+        <a class="link logo" href="./index.html">
+          Web<span class="accent-logo">Studio</span>
+        </a>
+        <address class="connektion">
+          <ul class="address-nav list">
+            <li class="address-item">
+              <a class="link addres" href="">
+                г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a class="link mail" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="link tell" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
