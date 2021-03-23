@@ -62,7 +62,6 @@ h6,
 ul,
 p {
   margin-top: 0;
-  margin-bottom: 0;
 }
 
 img {
@@ -76,9 +75,10 @@ img {
 .logo {
   display: block;
   font-family: Raleway, sans-serif;
+  margin-right: 93px;
   color: var(--accent-color);
   font-size: 26px;
-  line-height: 1.2px;
+  line-height: 1.2;
   text-decoration: none;
 }
 .accent {
@@ -89,13 +89,10 @@ img {
   color: var(--white-color);
 }
 
-.logo {
-  margin-right: 93px;
-}
-
 ul {
   list-style: none;
 }
+
 nav {
   display: inline-flex;
   align-items: center;
@@ -172,6 +169,7 @@ header {
 }
 
 /* hero */
+
 .hero {
   background-color: var(--dark-bg-color);
   text-align: center;
@@ -207,15 +205,22 @@ header {
   cursor: pointer;
 }
 
-/*  fiter */
-l .filter-button {
+/*  filter */
+
+.filter-button {
   display: flex;
   justify-content: center;
+  padding-left: 0;
+}
+
+.filter-button > li:not(:first-child) {
+  margin-left: 8px;
 }
 
 .filter-button {
-  padding: 6px, 22px;
+  padding: 6px 22px;
   border-radius: 4px;
+  margin-bottom: 50px;
 
   color: var(--premiry-bg-color);
   color: var(--primary-text-color);
@@ -255,9 +260,9 @@ l .filter-button {
 .feature {
   display: flex;
   margin-left: -30px;
+  padding-left: 0;
 
   color: var(--list-text-color);
-  padding-left: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -271,40 +276,36 @@ l .filter-button {
 
 .advantages li {
   margin-left: 30px;
-  flex-basis: calc((100%-90px) / 3);
+  flex-basis: calc((100% - 90px) / 3);
 }
 /* filter */
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.filter-button {
-  display: flex;
-  justify-content: center;
-}
-.filter-button > li:not(:first-child) {
-  margin-left: 8px;
-}
 
 .grid {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
+  padding-top: 0;
   margin-left: -30px;
   margin-right: -30px;
-  margin-bottom: 0;
-  padding-top: 50px;
+
   color: var(--list-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
 .grid .item {
-  flex-basis: calc((100% - 30px) / 3);
-  margin: 0 10px 30px 0;
+  flex-basis: calc((100% - 90px) / 3);
+  margin: 0 30px 30px 0;
+}
+.grid.item:nth-child(n + 3) {
+  margin-bottom: 0;
 }
 
 .card-text {
-  margin-right: 17px;
   padding: 20px 24px;
   border-right: 1px solid var(--border-example);
   border-bottom: 1px solid var(--border-example);
@@ -324,7 +325,7 @@ l .filter-button {
 } /* soft */
 
 .section-caption {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .section-caption {
   color: var(--primary-text-color);
@@ -335,6 +336,7 @@ l .filter-button {
 }
 .soft {
   display: flex;
+  padding-left: 0;
   margin-left: -30px;
   padding-bottom: 94px;
 }
@@ -348,8 +350,7 @@ l .filter-button {
 /* team */
 
 .team .section-caption {
-  padding-bottom: 50px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 .team {
@@ -363,6 +364,7 @@ l .filter-button {
   flex-basis: calc((100% - 60px) / 3);
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
+  background: var(--white-color);
 }
 
 .team .list {
@@ -370,7 +372,6 @@ l .filter-button {
   text-align: center;
   margin-left: -30px;
 
-  background: var(--white-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -382,12 +383,16 @@ l .filter-button {
   font-size: 16px;
   line-height: 1.18;
 }
-.section-team {
+.box {
+  margin-bottom: 0;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+.section-team {
+  margin-bottom: 10px;
 }
 .profi {
-  padding-bottom: 30px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1, 18;
   letter-spacing: 0.03em;
@@ -415,8 +420,9 @@ l .filter-button {
 }
 .connektion .list {
   background: var(--dark-bg-color);
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
+
 .address-nav .link {
   font-weight: 400;
   font-size: 14px;
@@ -429,16 +435,23 @@ l .filter-button {
 .address-nav .link:focus {
   color: var(--accent-color);
 }
+
 .address-item .link {
   color: var(--white-color);
 }
-
+.address-item {
+  margin-bottom: 9px;
+}
+.address-mail {
+  margin-bottom: 9px;
+}
 footer .list {
   text-align: left;
   margin-left: 0;
 }
 
 footer .logo {
+  margin-right: 0;
   margin-bottom: 20px;
 }
 .connektion {
